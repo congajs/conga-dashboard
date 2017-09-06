@@ -1,0 +1,12 @@
+body.modal-open .sidebar, body.modal-open .main-section {
+    -webkit-filter: blur(3px) grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: blur(3px) grayscale(100%);
+}
+
+.modal {
+    z-index: 9999;
+}
+
+.modal-background {
+    background-color: rgba(10, 10, 10, .6);
+}

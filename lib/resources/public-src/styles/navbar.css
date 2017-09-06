@@ -1,0 +1,17 @@
+.top-nav {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    z-index: 9999;
+}
+
+.navbar-link, .navbar-link:hover {
+    color: #fff;
+}
+
+.navbar-link::after {
+    border-color: #fff;
+}

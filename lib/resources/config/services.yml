@@ -1,0 +1,17 @@
+parameters:
+
+    conga.dashboard.manager.constructor: "@conga/framework-dashboard:CongaDashboardManager"
+    conga.dashboard.webpack.factory.constructor: "@conga/framework-dashboard:WebpackFactory"
+
+services:
+
+    conga.dashboard.manager:
+        constructor: "%conga.dashboard.manager.constructor%"
+        tags:
+            - { name: kernel.event, event: kernel.compile, method: onKernelCompile, priority: 0 }
+
+    conga.dashboard.webpack.factory:
+        constructor: "%conga.dashboard.webpack.factory.constructor%"
+        arguments: ['@service_container']
+        tags:
+            - { name: webpack.config.factory, method: factory }
