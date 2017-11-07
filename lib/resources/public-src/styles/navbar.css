@@ -5,13 +5,18 @@
     width: 100%;
     height: 50px;
     background-color: transparent;
-    z-index: 9999;
+    z-index: 8888;
 }
 
 .navbar-link, .navbar-link:hover {
     color: #fff;
+    pointer-events: auto;
 }
 
 .navbar-link::after {
     border-color: #fff;
+}
+
+.navbar-menu {
+    /*pointer-events: none;*/
 }
