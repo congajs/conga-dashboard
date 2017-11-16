@@ -1,0 +1,7 @@
+#hero.sticky {
+    position: fixed;
+    top: 0;
+    left: 25px;
+    z-index: 7777;
+    width: 100%;
+}

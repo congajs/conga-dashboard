@@ -38,7 +38,7 @@
     height: 100%;
     background-color: #222;
     width: 50px;
-    z-index: 8888;
+    z-index: 9999;
 }
 
 .sidebar ul {
@@ -68,7 +68,7 @@
 }
 
 .sidebar a.router-link-active .icon .fa {
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .sidebar .conga {
@@ -88,5 +88,12 @@
 
 .sidebar a.router-link-active .icon img {
     opacity: 1;
-    width: 28px;
+}
+
+.sidebar [class*="tooltip--"]:after {
+    background-color: rgba(56, 56, 56, .7);
+}
+
+.sidebar .tooltip--right:before {
+    border-right-color: rgba(56, 56, 56, .7);
 }
