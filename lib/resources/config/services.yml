@@ -13,5 +13,5 @@ services:
     conga.dashboard.webpack.factory:
         constructor: "%conga.dashboard.webpack.factory.constructor%"
         arguments: ['@service_container']
-        tags:
-            - { name: webpack.config.factory, method: factory }
+        #tags:
+        #    - { name: webpack.config.factory, method: factory }
