@@ -10,6 +10,10 @@ services:
         tags:
             - { name: kernel.event, event: kernel.compile, method: onKernelCompile, priority: 0 }
 
+    conga.dashboard.bundle.finder:
+        constructor: "@conga/framework-dashboard:service/BundleService"
+        arguments: ["@service_container"]
+
     conga.dashboard.webpack.factory:
         constructor: "%conga.dashboard.webpack.factory.constructor%"
         arguments: ['@service_container']
